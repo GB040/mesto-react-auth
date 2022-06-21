@@ -19,7 +19,6 @@ import Register from './Register';
 import Login from './Login';
 import Footer from './Footer';
 import Spinner from './Spinner';
-import PageNotFound from './PageNotFound';
 import api from '../utils/api';
 import * as mestoAuth from '../utils/mestoAuth';
 import { CurrentUserContext } from '../contexts/CurrentUserContext'; //*импортировали новый объект контекста
@@ -369,10 +368,6 @@ function App() {
 
               <Route path='/sign-in'>
                 <Login onSubmitButton={handleLoginSubmit} />
-              </Route> 
-
-              <Route path="*">
-                <PageNotFound />
               </Route> 
 
               <Route>
